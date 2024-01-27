@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docukk</title>
+</head>
+
+<body>
+    <button onclick="  
+    rps();
+      let result='';const cpick=rps();
+     if(cpick==='rock'){
+        result='tie';
+     }
+     else if(cpick==='paper'){
+        result='you lose';
+     }
+     else{
+        result='you won';
+     } 
+     alert(` ${result} i.e computer choose ${cpick}`)
+    
+    
+    ">Rock</button>
+    <button onclick="
+    const cpick=rps();
+    rps();
+     let result='';
+    if(cpick==='paper'){
+       result='tie';
+    }
+    else if(cpick==='scissor'){
+       result='you lose';
+    }
+    else{
+       result='you won';
+    }
+    alert(` ${result} i.e computer choose ${cpick}`)
+   
+   
+   ">Paper</button>
+    <button onclick=" 
+    rps();const cpick=rps();
+    
+    if(cpick==='scissor'){
+       result='tie';
+    }else if(cpick==='rock'){
+       result='you lose';
+    } else{
+       result='you won';
+    }alert(` ${result} i.e computer choose ${cpick}`)  
+   ">Scissor</button>
+
+
+   <script>
+       function rps(){
+           let cpick='';
+        const mmove=Math.random();
+        
+       if(mmove<1/3&&mmove>0){
+           cpick='rock';
+           console.log(cpick);
+       }else if(mmove=>1/3&&mmove<2/3){   
+           cpick='paper';
+           console.log(cpick);
+       }
+       else if(mmove=>2/3&&mmove<1){
+        cpick='scissor';
+        console.log(cpick);
+    }
+    return cpick;
+    
+    }
+   </script>
+</body>
+
+</html> 
+
